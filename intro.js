@@ -55,15 +55,15 @@ function printFirstItemThenHalfThenSayHi100Times(input) {
 
 // DIVIDER  DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER
 
-const boxes1 = [1,2,3,4,5]
-const boxes2 = [6,7,8,9,10]
+const boxes1 = [1, 2, 3, 4, 5]
+const boxes2 = [6, 7, 8, 9, 10]
 
 function compressBoxTwice(boxes1, boxes2) {
-    boxes1.forEach(function(boxes1) {
+    boxes1.forEach(function (boxes1) {
         console.log(boxes1)
     });
 
-    boxes2.forEach(function(boxes2) {
+    boxes2.forEach(function (boxes2) {
         console.log(boxes2)
     });
 } // O (x + y) -> different terms of input will make the big O using different term
@@ -91,11 +91,21 @@ function logAllPairs(boxes) {
 // DIVIDER  DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER
 
 function sumAllPairs(array) {
-    array.forEach(function(array1) {
-        array.forEach(function(array2) {
+    array.forEach(function (array1) {
+        array.forEach(function (array2) {
             console.log(array1 + array2)
         });
     });
 } // O(n + n^2) -> O(n^2) -> n is a non dominant compared to n^2, so n will be dropped
 
-sumAllPairs([1, 2, ,3 ,4])
+// sumAllPairs([1, 2, ,3 ,4])
+
+function hiN(n) {
+    const results = []
+    for (let i = 0; i < n.length; i++) {
+        results[i] = 'Hi'
+    }
+    return results
+}// space comp O(n), time comp O(n)
+
+console.log(hiN([1, 2, 3, 4]))
