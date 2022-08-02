@@ -100,6 +100,8 @@ function sumAllPairs(array) {
 
 // sumAllPairs([1, 2, ,3 ,4])
 
+// DIVIDER  DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER
+
 function hiN(n) {
     const results = []
     for (let i = 0; i < n.length; i++) {
@@ -108,4 +110,25 @@ function hiN(n) {
     return results
 }// space comp O(n), time comp O(n)
 
-console.log(hiN([1, 2, 3, 4]))
+// console.log(hiN([1, 2, 3, 4]))
+
+// DIVIDER  DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER
+
+const findNemo2 = array => {
+    array.forEach(fish => {
+        if (fish === 'Nemo') {
+            console.log('Found nemo')
+        }
+    });
+}
+
+const findNemo3 = array => {
+    for (let fish of array) {
+        if (fish === 'Nemo') {
+            console.log('Found nemo')
+        }
+    };
+}
+
+findNemo2(bestFish)
+findNemo3(bestFish)
