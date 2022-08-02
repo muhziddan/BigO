@@ -38,7 +38,7 @@ function printFirstItemThenHalfThenSayHi100Times(input) {
     var middleIndex = Math.floor(input.length / 2)
     var currentIndex = 0
 
-    for (currentIndex < middleIndex) {
+    while (currentIndex < middleIndex) {
         console.log(input[currentIndex])
         currentIndex++
     }
@@ -46,4 +46,6 @@ function printFirstItemThenHalfThenSayHi100Times(input) {
     for (let i = 0; i < 100; i++) {
         console.log('Hi!')
     }
-}
+} // O (n/2 + 1) -> O (n)
+
+printFirstItemThenHalfThenSayHi100Times(boxes)
