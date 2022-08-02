@@ -13,6 +13,8 @@ function findNemo(array) { // O(N) or linear time
     // console.log("time to find nemo: " + (t1 - t0) + ' miliseconds')
 }
 
+// DIVIDER  DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER
+
 const boxes = []
 function boxMultiplier(count) {
     for (let i = 0; i < count; i++) {
@@ -30,7 +32,7 @@ function logFirstThreeBoxes(array) { // O(1) or constant time
 // boxMultiplier(1000)
 // logFirstThreeBoxes(boxes)
 
-// DIVIDER
+// DIVIDER  DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER
 
 function printFirstItemThenHalfThenSayHi100Times(input) {
     console.log(input[0])
