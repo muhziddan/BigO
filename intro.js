@@ -114,6 +114,8 @@ function hiN(n) {
 
 // DIVIDER  DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER DIVIDER
 
+//js other type of function syntax
+
 const findNemo2 = array => {
     array.forEach(fish => {
         if (fish === 'Nemo') {
