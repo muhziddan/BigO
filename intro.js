@@ -27,5 +27,23 @@ function logFirstThreeBoxes(array) { // O(1) or constant time
 }
 
 // findNemo(bestFish)
-boxMultiplier(1000)
-logFirstThreeBoxes(boxes)
+// boxMultiplier(1000)
+// logFirstThreeBoxes(boxes)
+
+// DIVIDER
+
+function printFirstItemThenHalfThenSayHi100Times(input) {
+    console.log(input[0])
+
+    var middleIndex = Math.floor(input.length / 2)
+    var currentIndex = 0
+
+    for (currentIndex < middleIndex) {
+        console.log(input[currentIndex])
+        currentIndex++
+    }
+
+    for (let i = 0; i < 100; i++) {
+        console.log('Hi!')
+    }
+}
